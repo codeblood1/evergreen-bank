@@ -2,8 +2,8 @@ import { createClient } from '@supabase/supabase-js';
 
 // Supabase credentials from environment variables (for production)
 // Falls back to hardcoded values for development
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://anwwtjnvmgsbubvovrlu.supabase.co';
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFud3d0am52bWdzYnVidm92cmx1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAzMTg0MjgsImV4cCI6MjA2NTg5NDQyOH0.X3JlWmtF5y_3hJYqX4qh9t1PpDoEa2Gy4u6NBg7pRyk';
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://peuwbdpkewxnmjbhgsyy.supabase.co/rest/v1/';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBldXdiZHBrZXd4bm1qYmhnc3l5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY3MDAxNTEsImV4cCI6MjA5MjI3NjE1MX0.QwgLIbzqgteP6NICuH77Iue0qBuk3Gwg69dLD_Cl_Ug';
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
